@@ -13,6 +13,7 @@
     "crypto": "^1.0.1",
     "qs": "^6.9.4",
     "request": "^2.88.2",
-    "request-promise-native": "^1.0.9"
+    "request-promise-native": "^1.0.9",
+    "stripchar": "^1.2.1"
   }
 }
