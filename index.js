@@ -3,8 +3,8 @@ const rp = require('request-promise-native');
 const fs = require('fs');
 const qs = require('qs');
 
-const API_SECRET = 'YOUR_API_SECRET';
-const API_IDENTIFIER = 'YOUR_API_IDENTIFIER';
+const API_SECRET = 'IrdkCRXYwMMDO7rAmF5GM/dOFC3hitpEOF9t6R96I4k=';
+const API_IDENTIFIER = '3d206473-123c-4a0b-b952-77cb0be1a65e';
 
 /**
  * Hash body.
@@ -185,27 +185,27 @@ async function getInvitationStatus(invitationId) {
   console.log('Got invitation status', invitationStatusRes.body);
 }
 
-// const options = {
-//   lang: 'fi',
-//   identifier: 'YOUR-FINNISH-SOCIAL-NUMBER',
-//   authService: 'tupas-nordea',
-//   identifierType: 'Finland_SSN',
-// };
-
 const options = {
-  lang: 'da',
-  identifier: 'YOUR-DANISH-SOCIAL-NUMBER',
-  authService: 'openidconnect-nets-nemid',
-  identifierType: 'Denmark_PID',
+  lang: 'fi',
+  identifier: '091086-299P',
+  authService: 'tupas-nordea',
+  identifierType: 'Finland_SSN',
 };
+
+// const options = {
+//   lang: 'da',
+//   identifier: 'YOUR-DANISH-SOCIAL-NUMBER',
+//   authService: 'openidconnect-nets-nemid',
+//   identifierType: 'Denmark_PID',
+// };
 
 
 // - Step 1
-getAllAuthMethods();
+// getAllAuthMethods();
 
 // - Step 2
 run(options);
 
 // - Step 3
 // should be run after the authentication is done via the signing url created in the step 2
-// getInvitationStatus('TARTGET_INVITATION_ID')
+// getInvitationStatus('6976fb50-e538-4e0d-85c2-59dad0d1652a')
